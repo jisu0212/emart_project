@@ -7,9 +7,10 @@ header .service_menu > a {margin-left: 30px; font-size: 0.75rem;}
 header .service_menu > a:first-child {margin:0;}
 header nav {
     margin:0 auto;
-    width:1300px;
+    width:1440px;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
+    padding: 0 50px;
 }
 header nav h1 {}
 header nav h1 a {}
@@ -25,11 +26,11 @@ header nav .gnb > li .sub {
 header nav .gnb > li .sub li {margin-top: 10px;}
 header nav .gnb > li .sub li a {color:#fff;}
 /* ====================공통 */
-main .part {padding: 150px 310px;}
+main .part {width: 1400px; margin:0 auto; padding: 150px 0;}
 main .part .title h2 {font-size: 2.813rem; font-weight: 700;}
 main .part .title p {font-size: 1.25rem; color:#F9BB00; margin-top: 10px;}
 /* ====================part1 */
-main .part1 {padding: 0 240px;}
+main .part1 {margin:0 auto; padding:0; width:1400px;}
 main .part1 .ad_list {}
 main .part1 .ad_list li {}
 main .part1 .ad_list li .ad_slide {text-align: center;}
@@ -81,8 +82,8 @@ main .part3 .only_wrap a {
     display: flex; flex-flow: column nowrap; width:calc((100% / 4) - 26px); height: 450px;
     background-color: #fff; text-align: center; border-radius: 20px; transition:0.3s;}
 main .part3 .only_wrap a:hover {border: 3px solid #F9BB00; transform:translateY(-30px);}
-main .part3 .only_wrap a p {border-radius: 20px; overflow: hidden;}
-main .part3 .only_wrap a p img {}
+main .part3 .only_wrap a p {border-radius: 20px; overflow: hidden; height:238px;}
+main .part3 .only_wrap a p img {width:100%;}
 main .part3 .only_wrap a .only_info {height:calc(100% - 226px);}
 main .part3 .only_wrap a .only_info > h3 {margin: 30px 0 22px;}
 main .part3 .only_wrap a .only_info > h3 img {}
@@ -90,7 +91,7 @@ main .part3 .only_wrap a .only_info > h3 .info_title {}
 main .part3 .only_wrap a .only_info .info_title h3 {font-size: 1.25rem; margin-bottom: 10px;}
 main .part3 .only_wrap a .only_info .info_title p {}
 /* ====================part4 */
-main .part4 {padding:150px 0; overflow: hidden;}
+main .part4 {margin:0; float: right; width:100%;}
 main .part4 .part4_content {
     background-color: #F9BB00; width: 1723px;
     float: right; border-radius: 100px 0 0 100px;
@@ -141,7 +142,7 @@ main .part5 .search_img img:first-child {
 }
 main .part5 .search_img img:last-child {position:relative; bottom:150px;}
 /* ====================part6 */
-main .part6 {padding:150px 0; overflow: hidden;}
+main .part6 {margin:0; width:100%;}
 main .part6 .part6_content {
     background-color: #F2F2F2; width: 1723px;
     float: left; border-radius: 0 100px 100px 0;
