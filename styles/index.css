@@ -1,36 +1,47 @@
 body {font-family: "Noto Sans KR",sans-serif;}
-header {padding:20px 0;}
-header .service_menu {
-    width:1300px; text-align: right; margin:0 auto 20px;
-}
-header .service_menu > a {margin-left: 30px; font-size: 0.75rem;}
+header {z-index: 999; height:119px; position: relative; width:100%; padding: 16px 0 31px;}
+header .service_menu {width:1300px; text-align: right; margin: 0 auto 30px;}
+header .service_menu > a {font-size: 0.75rem; margin-left: 30px;}
 header .service_menu > a:first-child {margin:0;}
-header nav {
-    margin:0 auto;
-    width:1440px;
-    display: flex; flex-flow: row nowrap;
-    justify-content: space-between;
-    padding: 0 50px;
+header .main_menu {display: flex; justify-content: space-between; align-items: center; width:1300px; margin: 0 auto;}
+header .main_menu h1 {}
+header .main_menu h1 a {}
+header .main_menu h1 a img {}
+header .main_menu nav {}
+header .main_menu nav .sub_bg {
+    background-color: rgba(0,0,0,0.6);
+    height:220px; position:absolute; width:100%;
+    left:0; top: 119px;
 }
-header nav h1 {}
-header nav h1 a {}
-header nav h1 a img {}
-header nav .gnb {display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between; width:calc(100% - 520px);}
-header nav .gnb > li {}
-header nav .gnb > li a {font-size: 1.25rem; text-align: right; display: inline-block;}
-header nav .gnb > li a:last-child {margin:0;}
-header nav .gnb > li .sub {
-    display: none;
-    background-color: rgba(0,0,0,0.5); height:200px; position: relative; top:20px;
+header .main_menu nav .gnb {display: flex; justify-content: space-between;}
+header .main_menu nav .gnb > li {
+    margin-right: 100px;
+    position:relative;
 }
-header nav .gnb > li .sub li {margin-top: 10px;}
-header nav .gnb > li .sub li a {color:#fff;}
+header .main_menu nav .gnb > li:last-child {margin:0;}
+header .main_menu nav .gnb > li > a {font-size: 1.25rem;}
+header .main_menu nav .gnb > li .sub {
+    position:absolute;
+    left: 0; top: 70px;
+    width:max-content;
+}
+header .main_menu nav .gnb > li .sub li {}
+header .main_menu nav .gnb > li .sub li a {
+    font-size: 0.91rem;
+    display: block;
+    white-space:nowrap;
+    line-height: 30px;
+    color:#fff;
+    font-weight: 300;
+}
+header .main_menu nav .gnb > li > a:hover,
+header .main_menu nav .gnb > li .sub li a:hover {color:#F9BB00; transition: 0.3s;}
 /* ====================공통 */
-main .part {width: 1400px; margin:0 auto; padding: 150px 0;}
+main .part {width: 1300px; margin:0 auto; padding: 150px 0;}
 main .part .title h2 {font-size: 2.813rem; font-weight: 700;}
 main .part .title p {font-size: 1.25rem; color:#F9BB00; margin-top: 10px;}
 /* ====================part1 */
-main .part1 {margin:0 auto; padding:0; width:1400px;}
+main .part1 {margin:0 auto; padding:0; width:1440px;}
 main .part1 .ad_list {}
 main .part1 .ad_list li {}
 main .part1 .ad_list li .ad_slide {text-align: center;}
@@ -121,17 +132,20 @@ main .part5 {display:flex; justify-content: space-between;}
 main .part5 .search_content {width:706px;}
 main .part5 .search_content h2 {font-size: 2.813rem; font-weight: 700; margin-bottom: 70px;}
 main .part5 .search_content .search_wrap {}
-main .part5 .search_content .search_wrap .search_bar {width: 100%; background-color: #fff; height:75px; padding: 10px 30px;
-    display: flex; border:1px solid #F9BB00; border-radius: 10px 10px 10px 30px;
+main .part5 .search_content .search_wrap .search_bar {
+    width: 100%; background-color: #fff; height:75px; padding: 10px 30px;
+    display: flex; border:1px solid #F9BB00; border-radius: 10px 10px 10px 30px; align-items: center;
 }
 main .part5 .search_content .search_wrap .search_bar input {width:100%; border:0; font-size: 1.25rem;}
 main .part5 .search_content .search_wrap .search_bar input:focus {outline: none;}
-main .part5 .search_content .search_wrap .search_bar img {}
+main .part5 .search_content .search_wrap .search_bar a {width: 32px; height: 32px;}
+main .part5 .search_content .search_wrap .search_bar a img {width:100%;}
 main .part5 .search_content .search_wrap .search_keywords {padding-top: 20px; width:100%; display: flex; justify-content: space-between;}
-main .part5 .search_content .search_wrap .search_keywords span {
+main .part5 .search_content .search_wrap .search_keywords a {
     background-color: #E6E6E6; padding:10px 20px; font-size: 1.25rem;
-    border-radius: 10px 0 10px 10px;
+    border-radius: 10px 0 10px 10px; transition: 0.3s;
 }
+main .part5 .search_content .search_wrap .search_keywords a:hover {background-color: #F9BB00;}
 main .part5 .search_img {width:377px; height:331px;}
 main .part5 .search_img img:first-child {
     position:relative; left:40px; z-index: 999; animation: up_down 0.8s ease alternate infinite;
