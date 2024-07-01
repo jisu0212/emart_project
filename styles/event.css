@@ -1,0 +1,97 @@
+header {z-index: 999; height:92px; position: relative; width:100%; padding: 16px 0 0;}
+header .service_menu {width:1300px; text-align: right; margin: 0 auto;}
+header .service_menu > a {font-size: 0.75rem; margin-left: 30px;}
+header .service_menu > a:first-child {margin:0;}
+header .main_menu {display: flex; justify-content: space-between; align-items: center; width:1300px; margin: 0 auto; height:60px;}
+header .main_menu h1 {}
+header .main_menu h1 a {}
+header .main_menu h1 a img {}
+header .main_menu nav {height:60px; padding:20px 0;}
+header .main_menu nav .sub_bg {
+    background-color: rgba(0,0,0,0.6);
+    height:220px; position:absolute; width:100%;
+    left:0; top: 92px;
+}
+header .main_menu nav .gnb {display: flex; justify-content: space-between;}
+header .main_menu nav .gnb > li {
+    margin-right: 100px;
+    position:relative;
+}
+header .main_menu nav .gnb > li:last-child {margin:0;}
+header .main_menu nav .gnb > li > a {font-size: 1.25rem;}
+header .main_menu nav .gnb > li .sub {
+    position:absolute;
+    left: 0; top: 70px;
+    width:max-content;
+}
+header .main_menu nav .gnb > li .sub li {}
+header .main_menu nav .gnb > li .sub li a {
+    font-size: 0.91rem;
+    display: block;
+    white-space:nowrap;
+    line-height: 30px;
+    color:#fff;
+    font-weight: 300;
+}
+header .main_menu nav .gnb > li > a:hover,
+header .main_menu nav .gnb > li .sub li a:hover {color:#F9BB00; transition: 0.3s;}
+main .part {width: 1300px; margin:0 auto; padding: 50px 0 150px;}
+main .part .title {margin-bottom: 86px;}
+main .part .title h2 {font-size: 2.813rem; font-weight: 700;}
+main .part .title p {font-size: 1.25rem; color:#999; margin-top: 10px;}
+main .part .event_list {display:flex; flex-flow: row wrap; justify-content: space-between;}
+main .part .event_list .event_link {margin-bottom: 50px;}
+main .part .event_list .event_link:hover {color:#F9BB00; transition:0.3s;}
+main .part .event_list .event_link:last-child {margin: 0;}
+main .part .event_list .event_link .event_img {
+    width:640px; height:313px; background-image: url(../images/event_001.png);
+    border-radius: 20px;
+}
+main .part .event_list .event_link:nth-child(2) .event_img {
+    background-image: url(../images/event_002.png);
+}
+main .part .event_list .event_link:nth-child(3) .event_img {
+    background-image: url(../images/event_003.png);
+}
+main .part .event_list .event_link:nth-child(4) .event_img {
+    background-image: url(../images/event_004.png);
+}
+main .part .event_list .event_link:nth-child(5) .event_img {
+    background-image: url(../images/event_005.png);
+}
+main .part .event_list .event_link:nth-child(6) .event_img {
+    background-image: url(../images/event_006.png);
+}
+main .part .event_list .event_link:nth-child(7) .event_img {
+    background-image: url(../images/event_007.png);
+}
+main .part .event_list .event_link:nth-child(8) .event_img {
+    background-image: url(../images/event_008.png);
+}
+main .part .event_list .event_link .event_text {margin-top: 20px;}
+main .part .event_list .event_link .event_text .date {margin-bottom: 5px;}
+main .part .event_list .event_link .event_text h2 {font-size: 1.125rem; font-weight: 600;}
+
+/* ====================footer */
+footer {padding: 150px 310px; background-color: #F4F4F4;}
+footer > * a {transition: 0.3s;}
+footer > * a:hover {color:#F9BB00;}
+footer .footer_rule {display:flex; justify-content: space-between; align-items: center;}
+footer .footer_rule .rule_left {}
+footer .footer_rule .rule_left a {margin-right: 20px;}
+footer .footer_rule .rule_left a:first-child,
+footer .footer_rule .rule_left a:nth-child(2) {font-weight: 700;}
+footer .footer_rule .rule_left a:first-child::after,
+footer .footer_rule .rule_left a:nth-child(2)::after {
+    content: ''; display:inline-block; width:1px; height:15px; background-color: #000; margin-left: 20px;
+}
+footer .footer_rule .rule_left a:last-child {margin: 0;}
+footer .footer_rule .rule_right {}
+footer .footer_rule .rule_right a {}
+footer .footer_sns_link {display:flex; justify-content: space-between; align-items: center; margin:70px 0;}
+footer .footer_sns_link span {}
+footer .footer_sns_link span a {}
+footer .footer_sns_link span a img {}
+footer .footer_info {display:flex; flex-flow: column nowrap;}
+footer .footer_info span {margin-bottom: 10px;}
+footer .footer_info span:last-child {margin: 0;}
